@@ -534,7 +534,7 @@ sub print_sequences {
 			my $alingmentFile = $gene . "_aligned.fa";
 
 			#Align the FASTA files
-			system ("mafft --maxiterate 1000 --localpair --quiet $file > $alingmentFile") == 0
+			system ("mafft --maxiterate 1000 --localpair --adjustdirection --quiet $file > $alingmentFile") == 0
 				or die "Error: mafft failed. Make sure mafft is installed and available.";
 		}
 	}
