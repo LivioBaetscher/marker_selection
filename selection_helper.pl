@@ -40,7 +40,7 @@ GetOptions(
 #Error handling for missing input directory
 unless(defined $genSetDir and -s $genSetDir){
 	die "###########################################################################\n".
-	"Input directory is missing.\n".
+	"Input directory is missing or incorrect.\n".
 	"###########################################################################\n";
 }
 
